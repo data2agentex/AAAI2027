@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>From Domain Data to Agentic Experience | AAAI-27 Bridge Program</title>
+  <meta content="AAAI-27 Bridge Program: From Domain Data to Agentic Experience. Bridging data-centric AI and agent learning. February 16–17, 2027, Palais des congrès de Montréal, Montréal, Canada." name="description">
+  <meta content="AAAI, bridge program, agentic data, data-centric AI, agent learning, AAAI 2027, Montréal" name="keywords">
+
+  <link href="assets/img/_favicon.png" rel="icon">
+  <link href="assets/img/_apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <style>
+    #hero h1.bridge-title {
+      font-size: 44px;
+      line-height: 1.25;
+    }
+    @media (max-width: 991px) {
+      #hero h1.bridge-title {
+        font-size: 28px;
+      }
+    }
+    #hero h2.bridge-subtitle {
+      font-size: 22px;
+      line-height: 1.45;
+      font-weight: 500;
+    }
+
+    .schedule-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+      font-family: Arial, sans-serif;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      margin: 20px 0;
+    }
+    .schedule-table th,
+    .schedule-table td {
+      padding: 12px 15px;
+      border-bottom: 1px solid #ccc;
+      text-align: left;
+    }
+    .schedule-table th {
+      background-color: #f7f7f7;
+      font-weight: bold;
+    }
+    .schedule-table td.time,
+    .schedule-table th:first-child {
+      white-space: nowrap;
+    }
+    .schedule-table tr.break-row td {
+      background-color: #fff3cd80 !important;
+    }
+    .schedule-table tr.poster-row td {
+      background-color: #d1ecf180 !important;
+    }
+    .schedule-table tr.day-row td {
+      background-color: #0d1b4c;
+      color: #fff;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+    @media (max-width: 768px) {
+      .schedule-table th,
+      .schedule-table td {
+        padding: 10px;
+      }
+      .schedule-table td.time,
+      .schedule-table th:first-child {
+        white-space: normal;
+      }
+    }
+
+    #organizers .speaker img,
+    #speakers .speaker img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+
+    .photo-placeholder {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin: 0 auto 15px;
+      background: #0d1b4c;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 32px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+    }
+
+    .person-role {
+      font-size: 0.92em;
+      color: #6c757d;
+      margin-top: 4px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header id="header" class="d-flex align-items-center">
+    <div class="container-fluid container-xxl d-flex align-items-center">
+
+      <div id="logo" class="me-auto">
+        <h1><a href="#hero" class="scrollto">AAAI<span>-27</span></a></h1>
+      </div>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#topic">Topics</a></li>
+          <li><a class="nav-link scrollto" href="#cfp">Call for Papers</a></li>
+          <li><a class="nav-link scrollto" href="#speakers">Speakers</a></li>
+          <li><a class="nav-link scrollto" href="#schedule">Schedule</a></li>
+          <li><a class="nav-link scrollto" href="#organizers">Organizers</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <section id="hero">
+    <div class="hero-container" data-aos="zoom-in" data-aos-delay="200">
+      <h1 class="bridge-title mb-4 pb-0" style="text-transform: none;">
+        From Domain Data to Agentic Experience
+      </h1>
+      <h2 class="bridge-subtitle mb-4 pb-0" style="text-transform: none; color: white;">
+        Bridging Data-Centric AI and Agent Learning<br>
+        AAAI-27 Bridge Program<br>
+        February 16–17, 2027<br>
+        Palais des congrès de Montréal, Montréal, Canada
+      </h2>
+    </div>
+  </section>
+
+  <main id="main">
+
+    <section id="about">
+      <div class="container position-relative" data-aos="fade-up">
+        <div class="row">
+          <div class="col-lg-12">
+            <h2>About the Bridge</h2>
+            <p style="font-size: 18px;">
+              AI agents pursue goals through observations, actions, tool use, and environmental feedback. Building and evaluating them requires data that capture meaningful interaction. Domain datasets, however, rarely specify the goals, constraints, tools, and success criteria needed to turn a professional workflow into a learning environment.
+            </p>
+            <p style="font-size: 18px;">
+              This bridge asks: <b>how can domain knowledge, data, and workflows become grounded, informative, and responsibly governed experience for learning and evaluating agents?</b>
+            </p>
+            <p style="font-size: 18px;">
+              We connect three communities that usually meet separately: <b>data-centric AI and data engineering</b>, <b>agent learning and interactive systems</b>, and <b>domain science and practice</b>. Data researchers contribute methods for collection, validation, coverage, governance, and provenance. Agent researchers contribute environment design, exploration, policy learning, and behavioral evaluation. Database and software-engineering researchers contribute methods for storing, querying, versioning, and tracing agent artifacts. Domain specialists define meaningful goals, professional constraints, and acceptable outcomes, including in experimental science, financial and service operations, physical engineering, and healthcare.
+            </p>
+            <p style="font-size: 18px;">
+              Participants will learn how to construct, curate, and manage agentic data through development and deployment, how to assess whether tasks and feedback are valid, and how to turn selected execution records into reusable learning and evaluation resources. The bridge is for researchers, graduate students, undergraduates, practitioners, and people who maintain data or environments.
+            </p>
+            <p style="font-size: 18px;">
+              The program is a two-day, in-person research meeting on <b>February 16–17, 2027</b>, at the Palais des congrès de Montréal, alongside AAAI-27. It combines ten invited talks, peer-reviewed contributed presentations, two poster sessions, and a moderated panel. The invited talks are the educational core: about five hours that introduce methods and open questions from complementary fields before turning to current research. Final room times follow AAAI’s allocation.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="topic" class="section-with-bg">
+      <br>
+      <br>
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Topics</h2>
+          <p>Five connected themes across the agentic-data lifecycle.</p>
+        </div>
+        <div class="row mb-4">
+          <div class="col-12">
+            <div class="topic-panel p-4 border shadow-sm rounded" style="background: #ffffff;">
+              <b style="font-size: 18px; color: #343a40;">(1) Workflow representation</b>
+              <p style="color: #6c757d; margin-top: 10px;">
+                Which activities genuinely require sequential interaction? How should goals, observations, tools, hidden state, constraints, and human decision points be represented? What is lost when a professional workflow becomes a benchmark?
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-4">
+          <div class="col-12">
+            <div class="topic-panel p-4 border shadow-sm rounded" style="background: #ffffff;">
+              <b style="font-size: 18px; color: #343a40;">(2) Experience production and management</b>
+              <p style="color: #6c757d; margin-top: 10px;">
+                How should demonstrations, historical logs, simulations, and agent-generated trajectories be combined and validated? How can agent configurations, tool calls, memory updates, and feedback be linked across runs? Topics include execution consistency, behavioral coverage, trace schemas, versioning, data lineage, queryable storage, and access control, including when operational traces can become training examples or regression tests.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-4">
+          <div class="col-12">
+            <div class="topic-panel p-4 border shadow-sm rounded" style="background: #ffffff;">
+              <b style="font-size: 18px; color: #343a40;">(3) Verification and evaluation</b>
+              <p style="color: #6c757d; margin-top: 10px;">
+                How should executable checks, expert review, human feedback, and learned evaluators be combined, given known biases in model-based judging? How can we detect evaluation shortcuts, account for delayed outcomes, and report uncertainty, while allowing domain-specific outcomes and constraints?
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-4">
+          <div class="col-12">
+            <div class="topic-panel p-4 border shadow-sm rounded" style="background: #ffffff;">
+              <b style="font-size: 18px; color: #343a40;">(4) Learning utility and transfer</b>
+              <p style="color: #6c757d; margin-top: 10px;">
+                How should difficulty be calibrated to the learner, the tools, and the execution budget? Which experience supports transferable planning or recovery skills? Discussion covers curricula, selection bias, training–test overlap, and controlled evaluation of transfer.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-4">
+          <div class="col-12">
+            <div class="topic-panel p-4 border shadow-sm rounded" style="background: #ffffff;">
+              <b style="font-size: 18px; color: #343a40;">(5) Human and physical context</b>
+              <p style="color: #6c757d; margin-top: 10px;">
+                How should corrections, approvals, and collaborative actions be recorded, and how should human preference signals be incorporated? What changes when interaction involves sensors, robots, or laboratory instruments? Topics include temporal alignment, reset conditions, simulation fidelity, access rights, consent, and conditions for reuse.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+    </section>
+
+    <section id="cfp">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Call for Papers</h2>
+        </div>
+        <p>
+          The AAAI-27 Bridge <b>From Domain Data to Agentic Experience</b> invites full papers, short papers, and extended abstracts on research results, datasets and benchmarks, experience-collection pipelines, reproducibility or failure analyses, and domain-grounded cases. Work in progress is welcome, including substantive domain cases that do not propose a new learning algorithm. Domain specialists are encouraged to contribute workflow case studies and posters that make assumptions and success criteria explicit.
+        </p>
+        <p>
+          Submissions will be reviewed for relevance, technical or empirical substance, clarity to a cross-disciplinary audience, and discussion value. Selected contributions will receive an oral presentation or a poster slot. We especially encourage junior and underrepresented researchers. Contributions are planned as <b>non-archival</b>. The bridge is in person; virtual presentations are not part of the AAAI-27 Bridge Program.
+        </p>
+
+        <h3>Key Dates</h3>
+        <p>These dates follow the <a href="https://aaai.org/conference/aaai/aaai-27/bridge-program-call-for-proposals/" target="_blank" rel="noopener noreferrer">AAAI-27 Bridge Program timetable</a>. If this bridge sets track-specific deadlines, they will be posted here.</p>
+        <ul>
+          <li><b>Submission deadline</b>: <span style="color: red; font-weight: bold;">December 1, 2026, AoE</span></li>
+          <li><b>Notification</b>: <span style="color: red; font-weight: bold;">December 13, 2026</span></li>
+          <li><b>Participant materials posted</b>: January 20, 2027</li>
+          <li><b>Bridge dates</b>: February 16–17, 2027</li>
+        </ul>
+        <p>Deadlines follow the <a href="https://time.is/Anywhere_on_Earth" target="_blank" rel="noopener noreferrer">Anywhere on Earth (AoE)</a> timezone.</p>
+
+        <h3>Submission Site</h3>
+        <p>The submission portal will be announced on this page.</p>
+
+        <h3>Submission Guidelines</h3>
+        <p>
+          Submissions must be in English and follow the <a href="https://aaai.org/conference/aaai/aaai-27/submission-instructions/" target="_blank" rel="noopener noreferrer">AAAI-27 author kit</a>. Papers must be submitted as a <b>single PDF file</b>. We welcome:
+        </p>
+        <ul>
+          <li><b>Full papers (8 pages)</b></li>
+          <li><b>Short papers (4 pages)</b></li>
+          <li><b>Extended abstracts (2 pages)</b></li>
+        </ul>
+        <p>For questions, please contact the organizers listed below.</p>
+      </div>
+    </section>
+
+    <section id="speakers" class="section-with-bg">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Invited Speakers</h2>
+          <p>Thematic descriptions reflect speaker expertise. Talk titles will be confirmed with the speakers.</p>
+        </div>
+
+        <h3 class="mb-4">Day 1 — Data Foundations, Agent Learning, and Evaluation</h3>
+        <div class="row">
+          <div class="col-md-3 col-sm-4 col-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="100" style="text-align: center;">
+              <div class="photo-placeholder" aria-hidden="true">JM</div>
+              <a href="https://jiaqima.github.io/" target="_blank" rel="noopener noreferrer" style="font-size: 1.2em; color: #00356B;">Jiaqi Ma</a>
+              <p>University of Illinois Urbana-Champaign</p>
+              <p class="person-role">Data foundations and curation</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-4 col-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="150" style="text-align: center;">
+              <div class="photo-placeholder" aria-hidden="true">YH</div>
+              <a href="https://sites.google.com/view/yifan-hu" target="_blank" rel="noopener noreferrer" style="font-size: 1.2em; color: #00356B;">Yifan Hu</a>
+              <p>Rutgers University</p>
+              <p class="person-role">Optimization and learning from feedback</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-4 col-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="200" style="text-align: center;">
+              <div class="photo-placeholder" aria-hidden="true">PB</div>
+              <a href="https://pierrelucbacon.com/" target="_blank" rel="noopener noreferrer" style="font-size: 1.2em; color: #00356B;">Pierre-Luc Bacon</a>
+              <p>Université de Montréal &amp; Mila</p>
+              <p class="person-role">Reinforcement learning from sequential interaction</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-4 col-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="250" style="text-align: center;">
+              <div class="photo-placeholder" aria-hidden="true">LL</div>
+              <a href="https://cs.sfu.ca/~linyi/" target="_blank" rel="noopener noreferrer" style="font-size: 1.2em; color: #00356B;">Linyi Li</a>
+              <p>Simon Fraser University</p>
+              <p class="person-role">Trustworthy verification and evaluation</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-4 col-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="300" style="text-align: center;">
+              <div class="photo-placeholder" aria-hidden="true">LJ</div>
+              <a href="https://liweijiang.github.io/" target="_blank" rel="noopener noreferrer" style="font-size: 1.2em; color: #00356B;">Liwei Jiang</a>
+              <p>NVIDIA</p>
+              <p class="person-role">Human-centered safety and alignment</p>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="mt-5 mb-4">Day 2 — Human Interaction, Physical AI, and Cross-Community Discussion</h3>
+        <div class="row">
+          <div class="col-md-3 col-sm-4 col-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="100" style="text-align: center;">
+              <div class="photo-placeholder" aria-hidden="true">YL</div>
+              <a href="https://www.yuwen.io/" target="_blank" rel="noopener noreferrer" style="font-size: 1.2em; color: #00356B;">Yuwen Lu</a>
+              <p>Contra Labs</p>
+              <p class="person-role">Human–AI interaction and creative AI</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-4 col-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="150" style="text-align: center;">
+              <div class="photo-placeholder" aria-hidden="true">BH</div>
+              <a href="https://www.linkedin.com/in/bretthalp/" target="_blank" rel="noopener noreferrer" style="font-size: 1.2em; color: #00356B;">Brett Halperin</a>
+              <p>Luma AI</p>
+              <p class="person-role">Generative media and creative workflows</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-4 col-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="200" style="text-align: center;">
+              <div class="photo-placeholder" aria-hidden="true">BZ</div>
+              <a href="https://boleizhou.github.io/" target="_blank" rel="noopener noreferrer" style="font-size: 1.2em; color: #00356B;">Bolei Zhou</a>
+              <p>University of California, Los Angeles</p>
+              <p class="person-role">Physical AI and robot learning</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-4 col-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="250" style="text-align: center;">
+              <div class="photo-placeholder" aria-hidden="true">PS</div>
+              <a href="https://www.cs.utexas.edu/~pstone/" target="_blank" rel="noopener noreferrer" style="font-size: 1.2em; color: #00356B;">Peter Stone</a>
+              <p>The University of Texas at Austin</p>
+              <p class="person-role">Multi-agent systems and robotics</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-4 col-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="300" style="text-align: center;">
+              <div class="photo-placeholder" aria-hidden="true">JM</div>
+              <a href="https://samueli.ucla.edu/people/jiaqi-ma/" target="_blank" rel="noopener noreferrer" style="font-size: 1.2em; color: #00356B;">Jiaqi Ma</a>
+              <p>University of California, Los Angeles</p>
+              <p class="person-role">Physical and cyber-physical agents</p>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="mt-5 mb-4">Panelists</h3>
+        <p>Moderated panel: <b>From Domain Data to Trustworthy Agentic Experience</b>.</p>
+        <div class="row">
+          <div class="col-md-3 col-sm-4 col-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="100" style="text-align: center;">
+              <div class="photo-placeholder" aria-hidden="true">SA</div>
+              <a href="https://arorasimran.com/" target="_blank" rel="noopener noreferrer" style="font-size: 1.2em; color: #00356B;">Simran Arora</a>
+              <p>Together AI<br>Incoming Assistant Professor, Caltech</p>
+              <p class="person-role">Systems for generating and reusing agent experience</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-4 col-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="150" style="text-align: center;">
+              <div class="photo-placeholder" aria-hidden="true">KF</div>
+              <a href="https://kjfeng.me/" target="_blank" rel="noopener noreferrer" style="font-size: 1.2em; color: #00356B;">K. J. Kevin Feng</a>
+              <p>Microsoft Research</p>
+              <p class="person-role">Human–AI interaction and alignment</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="schedule">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Schedule</h2>
+          <p>
+            Tentative two-day program. Each day includes a 90-minute lunch. Five invited speakers are scheduled each day, and the panel closes Day 2. Talk titles below are thematic descriptions, not confirmed titles. Final dates and times follow AAAI’s allocation. Times are local to Montréal.
+          </p>
+        </div>
+        <div class="table-responsive">
+          <table class="schedule-table table align-middle">
+            <thead>
+              <tr>
+                <th>Time</th>
+                <th>Activity</th>
+                <th>Speaker</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="day-row">
+                <td colspan="3">Day 1 — Data Foundations, Agent Learning, and Evaluation</td>
+              </tr>
+              <tr>
+                <td class="time">09:00 – 09:15</td>
+                <td>Opening remarks: From Domain Data to Agentic Experience</td>
+                <td>Organizers</td>
+              </tr>
+              <tr>
+                <td class="time">09:15 – 09:45</td>
+                <td>Invited Talk 1 (Data Foundations)</td>
+                <td>Jiaqi Ma (UIUC)</td>
+              </tr>
+              <tr>
+                <td class="time">09:45 – 10:15</td>
+                <td>Invited Talk 2 (Optimization and Learning from Feedback)</td>
+                <td>Yifan Hu (Rutgers University)</td>
+              </tr>
+              <tr>
+                <td class="time">10:15 – 10:45</td>
+                <td>Invited Talk 3 (Agent Learning)</td>
+                <td>Pierre-Luc Bacon (Université de Montréal / Mila)</td>
+              </tr>
+              <tr class="break-row">
+                <td class="time">10:45 – 11:00</td>
+                <td>Coffee break</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="time">11:00 – 12:15</td>
+                <td>Contributed oral presentations I</td>
+                <td>Three selected papers</td>
+              </tr>
+              <tr class="break-row">
+                <td class="time">12:15 – 13:45</td>
+                <td>Lunch break and informal networking</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="time">13:45 – 14:15</td>
+                <td>Invited Talk 4 (Trustworthy Evaluation)</td>
+                <td>Linyi Li (Simon Fraser University)</td>
+              </tr>
+              <tr>
+                <td class="time">14:15 – 14:45</td>
+                <td>Invited Talk 5 (Human-Centered AI)</td>
+                <td>Liwei Jiang (NVIDIA)</td>
+              </tr>
+              <tr class="poster-row">
+                <td class="time">14:45 – 16:45</td>
+                <td>Poster session I and research discussions</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="time">16:45 – 17:00</td>
+                <td>Day 1 wrap-up</td>
+                <td>Organizers</td>
+              </tr>
+
+              <tr class="day-row">
+                <td colspan="3">Day 2 — Human Interaction, Physical AI, and Cross-Community Discussion</td>
+              </tr>
+              <tr>
+                <td class="time">09:00 – 09:15</td>
+                <td>Day 2 opening and recap</td>
+                <td>Organizers</td>
+              </tr>
+              <tr>
+                <td class="time">09:15 – 09:45</td>
+                <td>Invited Talk 6 (Human–AI Interaction)</td>
+                <td>Yuwen Lu (Contra Labs)</td>
+              </tr>
+              <tr>
+                <td class="time">09:45 – 10:15</td>
+                <td>Invited Talk 7 (Generative Media and Creative Workflows)</td>
+                <td>Brett Halperin (Luma AI)</td>
+              </tr>
+              <tr>
+                <td class="time">10:15 – 10:45</td>
+                <td>Invited Talk 8 (Physical AI)</td>
+                <td>Bolei Zhou (UCLA)</td>
+              </tr>
+              <tr class="break-row">
+                <td class="time">10:45 – 11:00</td>
+                <td>Coffee break</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="time">11:00 – 12:15</td>
+                <td>Contributed oral presentations II</td>
+                <td>Three selected papers</td>
+              </tr>
+              <tr class="break-row">
+                <td class="time">12:15 – 13:45</td>
+                <td>Lunch break and informal networking</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="time">13:45 – 14:15</td>
+                <td>Invited Talk 9 (Multiagent Systems and Robotics)</td>
+                <td>Peter Stone (UT Austin)</td>
+              </tr>
+              <tr>
+                <td class="time">14:15 – 14:45</td>
+                <td>Invited Talk 10 (Physical and Cyber-Physical Agents)</td>
+                <td>Jiaqi Ma (UCLA)</td>
+              </tr>
+              <tr class="poster-row">
+                <td class="time">14:45 – 16:00</td>
+                <td>Poster session II and research discussions</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="time">16:00 – 17:30</td>
+                <td>Moderated panel: From Domain Data to Trustworthy Agentic Experience</td>
+                <td>Simran Arora (Together AI; Caltech), K. J. Kevin Feng (Microsoft Research)</td>
+              </tr>
+              <tr>
+                <td class="time">17:30 – 17:45</td>
+                <td>Closing remarks and future community directions</td>
+                <td>Organizers</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p style="margin-top: 20px; font-size: 16px;">The panel will discuss three questions:</p>
+        <ul>
+          <li>When can operational logs, human interaction records, and simulations become trustworthy learning experience?</li>
+          <li>How should provenance, human feedback, and domain-specific verification interact?</li>
+          <li>What can be transferred across digital and physical domains without losing essential context?</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="organizers" class="section-with-bg">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Organizers</h2>
+          <p>This bridge is organized by</p>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+            <div class="speaker" data-aos="fade-up" style="text-align: center;">
+              <div class="photo-placeholder" aria-hidden="true">JM</div>
+              <a href="https://jonasmueller.org/" target="_blank" rel="noopener noreferrer" style="font-size: 1.2em; color: #00356B;">Jonas Mueller</a>
+              <p>Handshake AI</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+            <div class="speaker" data-aos="fade-up" style="text-align: center;">
+              <div class="photo-placeholder" aria-hidden="true">SR</div>
+              <a href="https://sruan2.github.io/" target="_blank" rel="noopener noreferrer" style="font-size: 1.2em; color: #00356B;">Sherry Ruan</a>
+              <p>Handshake AI</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+            <div class="speaker" data-aos="fade-up" style="text-align: center;">
+              <img src="assets/img/organizers/ye_yuan.jpg" alt="Ye Yuan" class="img-fluid"><br>
+              <a href="https://stevenyuan666.github.io/" target="_blank" rel="noopener noreferrer" style="font-size: 1.2em; color: #00356B;">Ye Yuan</a>
+              <p>RBC Borealis AI, McGill University &amp; Mila</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+            <div class="speaker" data-aos="fade-up" style="text-align: center;">
+              <img src="assets/img/organizers/tianyu_shi.jpg" alt="Tianyu Shi" class="img-fluid"><br>
+              <a href="https://tianyushi.org/" target="_blank" rel="noopener noreferrer" style="font-size: 1.2em; color: #00356B;">Tianyu Shi</a>
+              <p>McGill University</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+            <div class="speaker" data-aos="fade-up" style="text-align: center;">
+              <img src="assets/img/organizers/haolun_wu.jpg" alt="Haolun Wu" class="img-fluid"><br>
+              <a href="https://haolun-wu.github.io/" target="_blank" rel="noopener noreferrer" style="font-size: 1.2em; color: #00356B;">Haolun Wu</a>
+              <p>Stanford University &amp; Mila</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+            <div class="speaker" data-aos="fade-up" style="text-align: center;">
+              <div class="photo-placeholder" aria-hidden="true">MC</div>
+              <a href="https://www.linkedin.com/in/chenmeijia30/" target="_blank" rel="noopener noreferrer" style="font-size: 1.2em; color: #00356B;">Meijia Chen</a>
+              <p>Rutgers University</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+            <div class="speaker" data-aos="fade-up" style="text-align: center;">
+              <div class="photo-placeholder" aria-hidden="true">ZW</div>
+              <a href="https://zywang0701.github.io/" target="_blank" rel="noopener noreferrer" style="font-size: 1.2em; color: #00356B;">Zhenyu (Zach) Wang</a>
+              <p>Rutgers University</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+            <div class="speaker" data-aos="fade-up" style="text-align: center;">
+              <div class="photo-placeholder" aria-hidden="true">SY</div>
+              <a href="https://www.linkedin.com/in/stephanieyoung1" target="_blank" rel="noopener noreferrer" style="font-size: 1.2em; color: #00356B;">Stephanie Young</a>
+              <p>Abundant AI</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Contact</h2>
+        </div>
+        <p>For questions about the bridge or submissions, please write to the organizers:</p>
+        <ul>
+          <li><a href="mailto:data2agentex@gmail.com">data2agentex@gmail.com</a></li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright"></div>
+      <div class="credits">
+        Template adopted from <a href="https://workshop-multi-turn-interaction.github.io/">MTI-LLM @ NeurIPS 2025</a>
+      </div>
+    </div>
+  </footer>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
